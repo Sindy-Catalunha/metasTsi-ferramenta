@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Ultra&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+.main-equipe{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    flex-wrap: wrap;
+}
+.fd-center-equipe{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    width: 500px;
+    border: 1px black solid;
+    background-color: #18d935;
+    box-shadow: 2px 2px 7px 3px gray;
+}
+.fd-center-equipe p{
+    font-size: 28px;
+    letter-spacing: 8px;
+    font-family: 'Ultra', serif;
+    border: 2px black solid;
+    border-radius: 20px;
+    padding: 15px 50px;
+    background: linear-gradient(rgb(25, 242, 25), rgb(14, 139, 14));
+}
+.lb-center-equipe{
+    font-size: 18px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+.in-center-equipe{
+    font-weight: 450;
+    font-size: 14px;
+    width: 300px;
+    color: black;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px black solid;
+    background-color: #8ff19e;
+}
+.in-center-equipe:focus{
+    box-shadow: 2px 8px 8px black;
+}
+#bt-entrar-equipe{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 3px rgb(242, 237, 237) solid;
+    background-color: #0a6618;
+    color: white;
+    box-shadow: 2px 5px 5px 5px black;
+}
+#bt-entrar-equipe:hover{
+    scale: 1.2;
+    cursor: pointer;
+}
