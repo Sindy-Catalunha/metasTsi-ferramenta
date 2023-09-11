@@ -21,8 +21,8 @@ function criaHeader($titulo){
             <img class="imglogo" src="../img/logo.png" alt="logo">
             <nav class="navegacao">
                 <a href="pag-inicial.php">INÍCIO</a>
-                <a href="sobre.php">SOBRE</a>
                 <a href="login.php">ENTRAR</a>
+                <a href="sobre.php">SOBRE</a>
             </nav>
         </header>';
 }
