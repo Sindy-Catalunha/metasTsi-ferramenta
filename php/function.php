@@ -21,7 +21,8 @@ function criaHeader($titulo){
             <img class="imglogo" src="../img/logo.png" alt="logo">
             <nav class="navegacao">
                 <a href="pag-inicial.php">INÍCIO</a>
-                <a href="login.php">ENTRAR</a>
+                <a href="entrar.php">ENTRAR</a>
+                <a href="form-equipe.php">EQUIPES</a>
                 <a href="sobre.php">SOBRE</a>
             </nav>
         </header>';
@@ -47,13 +48,17 @@ function criaMainSobre(){
     </main>';
 }
 
-function criaMainLogin(){
-    echo '<main class="mainLogin">
-    <form action="form-equipe.php" method="post">
+function criaMainLogin($erro = ""){
+    echo '
+    '.$erro.'
+    <main class="mainLogin">
+    
+    <form action="sis-entrar.php" method="post">
         <fieldset class="fd-center">
             <p>ENTRAR</p>
+            
             <label class="lb-center">E-mail:
-                <input class="in-center" name="email" type="email" placeholder="email-valido@dominio.com">
+                <input class="in-center" name="email" type="text" placeholder="email-valido@dominio.com">
             </label>
 
             <label class="lb-center">Senha:
@@ -63,7 +68,7 @@ function criaMainLogin(){
                 <input id="bt-entrar" type="submit" value="ENTRAR">
             </label>
         </fieldset>
-    </form>
+        </form>
 </main>';
 }
 
