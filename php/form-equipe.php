@@ -2,13 +2,13 @@
 <?php
 include "function.php";
 session_start();
-criaHeader("Entrar");
+criaHeader("Equipes");
 
-if(@$_SESSION["logado"] == 1){
-    criaMainFormEquipe();
-} else{
+if(@$_SESSION["logado"] == 0){
     echo "<div class='divErro'>
     SOMENTE COM LOGIN</div>";
+} else{
+    criaMainFormEquipe();
 }
 criaFooter();
 ?>
