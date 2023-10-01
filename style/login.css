@@ -4,12 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Quicksand', sans-serif; */
 }
 .mainLogin{
     display: flex;
     justify-content: center;
-    margin: 100px;
+    margin: 50px;
     flex-wrap: wrap;
 }
 .fd-center{
@@ -19,9 +19,8 @@
     align-items: center;
     padding: 30px 20px;
     width: 280px;
-    border: 1px black solid;
-    background-color: #18d935;
-    box-shadow: 2px 2px 7px 3px gray;
+    border: 2px black solid;
+    background-color: #75e486;
 }
 .fd-center p{
     font-size: 24px;
@@ -55,5 +54,5 @@
     margin: 5px;
     border-radius: 10px;
     border: 2px black solid;
-    background-color: #8ff19e;
+    background-color: #10dc2e;
 }

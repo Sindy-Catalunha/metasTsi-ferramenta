@@ -1,7 +1,7 @@
 <?php
 include "function.php";
 
-criaHeader("Início");
+criaHeader("Início", $usuario = "");
 criaMainInicial();
 criaFooter();
 ?>

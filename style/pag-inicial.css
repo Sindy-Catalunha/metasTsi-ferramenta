@@ -25,10 +25,35 @@
 /* MAIN ---------------------- */
 
 .divErro{
-    padding: 15px;
-    text-align: center;
-    color: white;
+    padding: 20px;
+    margin: 20px;
+    background-color: #e2838b;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    font-size: 18px;
     font-weight: 700;
-    font-size: 16px;
-    background-color: red;
+    color: black;
+    text-align: center;
+}
+.divAcerto{
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(134, 229, 134);
+    border: 1px solid rgb(65, 222, 65);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+.divLogoff{
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(134, 229, 134);
+    border: 1px solid rgb(65, 222, 65);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    text-align: center;
 }

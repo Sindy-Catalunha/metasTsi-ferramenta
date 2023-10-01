@@ -2,13 +2,17 @@
 <?php
 include "function.php";
 session_start();
-criaHeader("Equipes");
+
+$emailLogin = "";
 
 if(@$_SESSION["logado"] == 0){
-    echo "<div class='divErro'>
-    SOMENTE COM LOGIN</div>";
+    criaHeader("Equipes", $usuario = "");
+    echo "<div class='divErro'>🔒 SOMENTE COM LOGIN</div>";
 } else{
-    criaMainFormEquipe();
+    criaHeader("Equipes", $_SESSION["email"]);
+    $emailLogin = "<div class='divAcerto'><strong>⚠️ ATENÇÃO:</strong> Logado com ".$_SESSION["email"]."</div>";
+    criaMainFormEquipe($emailLogin);
 }
+
 criaFooter();
 ?>

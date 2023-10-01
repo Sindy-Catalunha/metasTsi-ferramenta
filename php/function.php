@@ -1,6 +1,23 @@
 <?php
+function criaMenu($usuario){
+    $menu = "";
+    if($usuario != ""){
+        $menu = '<a href="pag-inicial.php">INÍCIO</a>
+    <a href="form-equipe.php">EQUIPES</a>
+    <a href="sobre.php">SOBRE</a>
+    <a href="#"> '.$usuario.'</a>
+    <a href="sair.php">SAIR</a>';
+    } else{
+        $menu = '<a href="pag-inicial.php">INÍCIO</a>
+    <a href="entrar.php">ENTRAR</a>
+    <a href="form-equipe.php">EQUIPES</a>
+    <a href="sobre.php">SOBRE</a>';
+    }
+    
+    return $menu;
+}
 
-function criaHeader($titulo){
+function criaHeader($titulo, $usuario){
     echo '<!DOCTYPE html>
     <html lang="pt-br">
     <head>
@@ -20,10 +37,7 @@ function criaHeader($titulo){
         <header class="headerPai">
             <img class="imglogo" src="../img/logo.png" alt="logo">
             <nav class="navegacao">
-                <a href="pag-inicial.php">INÍCIO</a>
-                <a href="entrar.php">ENTRAR</a>
-                <a href="form-equipe.php">EQUIPES</a>
-                <a href="sobre.php">SOBRE</a>
+                '.criaMenu($usuario).'
             </nav>
         </header>';
 }
@@ -48,9 +62,9 @@ function criaMainSobre(){
     </main>';
 }
 
-function criaMainLogin($erro = ""){
+function criaMainLogin($erro = "", $sucessoOff = ""){
     echo '
-    '.$erro.'
+    <div>'.$erro.'</div>
     <main class="mainLogin">
     
     <form action="sis-entrar.php" method="post">
@@ -72,8 +86,9 @@ function criaMainLogin($erro = ""){
 </main>';
 }
 
-function criaMainFormEquipe(){
-    echo '<main class="main-equipe">
+function criaMainFormEquipe($emailLogin = ""){
+    echo ''.$emailLogin.'
+    <main class="main-equipe">
     <form action="form-equipe.php" method="post">
         <fieldset class="fd-center-equipe">
             <p>CRIAR EQUIPE</p>
@@ -89,7 +104,7 @@ function criaMainFormEquipe(){
             </label>
         </fieldset>
     </form>
-</main>';
+</main>z';
 }
 
 function criaFooter(){
